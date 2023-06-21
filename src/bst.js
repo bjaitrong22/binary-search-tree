@@ -31,6 +31,9 @@ export default class BST {
   } 
   
   search(value) {
-    return true;
+    if (this.root.data === value) {
+      return true;
+    }
+    return false;
   }
 }
