@@ -41,6 +41,10 @@ export default class BST {
         } else if (currentNode.data > value) {
           currentNode = currentNode.left;
         }
+
+        if (currentNode === null) {
+          return false;
+        }
       }
     }  
   }

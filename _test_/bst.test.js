@@ -97,4 +97,8 @@ describe('binarySearchTree', () => {
   test('it should return true if the first child node on the left is equal to 2', () => {
     expect(pbst.search(2)).toEqual(true);
   });
+
+  test('it should return false if the value 0 is not in the tree', () => {
+    expect(pbst.search(0)).toEqual(false);
+  });
 });
